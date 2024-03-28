@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form example</title>
+    <style>
+        input{
+            border:2.3px solid;
+            border-radius: 6%;
+        }
+        input:hover{
+            border:2.3px solid rgb(212, 124, 24);
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Enrollment Form</h1>
+    <form action="submit.html" method="post">
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Last First Middle"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="abc@gmail.com"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="8 char only"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="Gender">Gender</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">MALE</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">FEMALE</label>
+      </div>
+      <br />
+      <div>
+        <label for="birthdate">Date of Birth:</label>
+        <input type="date" name="datetoday" id="date" />
+      </div>
+      <br />
+      <div>
+        <label for="eligible">Eligibility:</label>
+        <input type="radio" name="eligible" id="yes" />
+        <label for="yes">Yes</label>
+        <input type="radio" name="eligible" id="no" />
+        <label for="no">No</label>
+      </div>
+      <br />
+      <div>
+        <label for="no">Mob Num:</label>
+        <input type="number" name="no" id="number"/>
+      </div>
+      <br />
+      <div>
+        <label for="resume">Resume:</label>
+        <input type="file" name="resume" id="resume" />
+      </div>
+      <br />
+      <div>
+        <label for="experince">Experince:</label><br />
+        <textarea name="experince" rows="12" cols="30">Past 2 year Experince</textarea>
+      </div><br>
+      <div>
+        <input type="submit" value="Apply Now!" />
+        <input type="reset" value="Reset Form" />
+        <input type="button" value="Go Back" />
+      </div>
+    </form><br>
+    <div>
+    <a href="./public/about.html">About Me</a>
+    <a href="./public/contactMe.html">Contact Me</a>
+    </div>
+  </body>
+</html>
